@@ -1,97 +1,97 @@
-# ✨ Prompt Optimizer SaaS
+# ✨ Prompt Optimizer
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue) ![React](https://img.shields.io/badge/React-18-cea119) ![Vite](https://img.shields.io/badge/Vite-5.0-646cff)
 
-> **"Turn messy thoughts into masterclass prompts in seconds."**
+> **"Transforme pensamentos desorganizados em prompts de mestre em segundos."**
 
-**Prompt Optimizer** is an AI-first SaaS platform designed to transform raw, poorly structured ideas into professional, high-performance prompts for Large Language Models (LLMs). Whether you're using Claude, GPT-4, or Llama, this tool ensures your prompts are clear, structured, and effective.
-
----
-
-## 🚀 Features
-
-### 🧠 **Multi-Model Intelligence**
-- **Universal Support**: Seamlessly switch between **Anthropic (Claude)**, **OpenAI (GPT-4/Turbo)**, and **Google (Gemini)**.
-- **Groq & Llama Ready**: Native support for high-speed inference engines like Groq.
-- **Local Model Support**: Connect to **Ollama**, **LM Studio**, or any OpenAI-compatible endpoint.
-
-### 🎨 **Premium Experience**
-- **Glassmorphism UI**: A stunning, modern interface featuring deep gradients, translucent cards, and neon accents.
-- **Interactive Visualizations**: Animated score gauges and "Insight Cards" that explain exactly *why* your prompt improved.
-- **Side-by-Side Comparison**: Real-time diff view to see the before/after magic instantly.
-
-### 🔒 **Privacy First**
-- **BYOK (Bring Your Own Key)**: Your API keys are stored securely in your browser's **Local Storage**. They never touch our database.
-- **Zero Retention**: We don't store your history or prompts on our servers.
+O **Prompt Optimizer** é uma plataforma e aplicação web *AI-first* projetada para transformar ideias brutas e mal estruturadas em prompts profissionais de alta performance para Grandes Modelos de Linguagem (LLMs). Seja usando Claude, GPT-4 ou modelos Llama, esta ferramenta garante que seus prompts sejam claros, estruturados e eficazes.
 
 ---
 
-## 🛠️ Technology Stack
+## 🚀 Recursos
 
-| Component | Tech |
+### 🧠 **Inteligência Multi-Modelo**
+- **Suporte Universal**: Alterne facilmente entre **Anthropic (Claude)**, **OpenAI (GPT-4/Turbo)** e **Google (Gemini)**.
+- **Pronto para Groq & Llama**: Suporte nativo para engines de inferência de ultra-velocidade como a Groq.
+- **Modelos Locais**: Conecte-se ao **Ollama**, **LM Studio** ou qualquer endpoint compatível com OpenAI.
+
+### 🎨 **Experiência Premium**
+- **Interface Glassmorphism**: Um visual moderno e impressionante com gradientes profundos, cartões translúcidos e acentos neon.
+- **Visualizações Interativas**: Medidores de pontuação animados e "Cards de Insights" que explicam exatamente *o que* e *por que* seu prompt melhorou.
+- **Comparação Lado a Lado**: Visualização de diff em tempo real para ver a mágica do "antes e depois" instantaneamente.
+
+### 🔒 **Privacidade em Primeiro Lugar**
+- **BYOK (Traga Sua Própria Chave)**: Suas chaves de API são armazenadas com segurança no **Local Storage** do seu navegador. Elas nunca tocam nosso banco de dados.
+- **Retenção Zero**: Não armazenamos seu histórico ou prompts em nossos servidores.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+| Componente | Tecnologia |
 |-----------|------|
 | **Frontend** | React 18, TypeScript, Vite, CSS Modules (Glassmorphism) |
-| **Backend** | Node.js, Express, Zod (Validation), TypeScript |
-| **AI Layer** | Anthropic SDK, OpenAI SDK, Google Generative AI SDK |
-| **Styling** | Vanilla CSS Variables (Theming), Lucide Icons |
+| **Backend** | Node.js, Express, Zod (Validação), TypeScript |
+| **Camada de IA** | Anthropic SDK, OpenAI SDK, Google Generative AI SDK |
+| **Estilização** | Variáveis CSS Vanilla (Temas), Ícones Lucide |
 
 ---
 
-## 🏃‍♂️ Quick Start
+## 🏃‍♂️ Instalação e Execução
 
-### Prerequisites
+### Pré-requisitos
 - Node.js 18+
-- An API Key (OpenAI, Anthropic, or Google)
+- Uma Chave de API (OpenAI, Anthropic ou Google)
 
-### 1. Clone the Repository
+### 1. Clonar o Repositório
 ```bash
 git clone https://github.com/bruno-oliveira-dev/prompt-optimizer.git
 cd prompt-optimizer
 ```
 
-### 2. Backend Setup
+### 2. Configurar o Backend
 ```bash
 cd backend
 npm install
-# Optional: Set global defaults in .env
+# Opcional: Definir padrões globais no .env
 cp .env.example .env
 npm run dev
 ```
-*Server runs on port `3001`.*
+*O servidor rodará na porta `3001`.*
 
-### 3. Frontend Setup
-Open a new terminal:
+### 3. Configurar o Frontend
+Abra um novo terminal:
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-*App runs on `http://localhost:5173`.*
+*A aplicação rodará em `http://localhost:5173`.*
 
 ---
 
-## 🎮 How to Use
+## 🎮 Como Usar
 
-1. **Open the App**: Navigate to `http://localhost:5173`.
-2. **Configure Provider**: Click the **Settings (⚙️)** icon.
-   - Choose your provider (e.g., **OpenAI** for GPT-4 or Groq).
-   - Enter your **API Key**.
-   - (Optional) Set a custom **Model URL** for local testing.
-3. **Optimize**: Type a rough prompt like *"make me a marketing email"* and click **Optimize**.
-4. **Learn**: Watch the score count up and review the "AI Enhancements" cards to see what improved.
-
----
-
-## 📸 Screenshots
-
-*(Add screenshots here after running the project)*
+1. **Abra a Aplicação**: Navegue até `http://localhost:5173`.
+2. **Configure o Provedor**: Clique no ícone de **Configurações (⚙️)**.
+   - Escolha seu provedor (ex: **OpenAI** para GPT-4 ou Groq).
+   - Insira sua **Chave de API**.
+   - (Opcional) Defina uma **URL Base** customizada para testes locais.
+3. **Otimize**: Digite um rascunho de prompt como *"crie um email de marketing"* e clique em **Otimizar**.
+4. **Learn**: Acompanhe a pontuação subir e veja os cards de "Melhorias de IA" para entender o que foi aprimorado.
 
 ---
 
-## 🛡️ License
+## 📸 Capturas de Tela
 
-This project is open source and available under the [MIT License](LICENSE).
+*(Adicione suas capturas de tela aqui)*
+
+---
+
+## 🛡️ Licença
+
+Este projeto é open source e está disponível sob a [Licença MIT](LICENSE).
 
 <div align="center">
-  <sub>Built with ❤️ by Bruno Oliveira</sub>
+  <sub>Desenvolvido com ❤️ por Bruno Oliveira</sub>
 </div>
